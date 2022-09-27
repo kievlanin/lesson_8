@@ -1,0 +1,274 @@
+@import 'reset.css';
+@import 'font-volja.css';
+@import 'font-lato.css';
+@import 'google-fonts.css';
+
+/* --------------------------------------------------------------------------- */
+h1,
+h2,
+h3 {
+  font-family: 'Lato';
+}
+h1 {
+  font-size: 2.875rem;
+  font-weight: 900;
+  line-height: 59.8px;
+  margin-bottom: 2.5rem;
+  color: #1e212c;
+}
+h2 {
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 150%;
+  color: #1e212c;
+  margin-bottom: 2.5rem;
+}
+h3 {
+  font-size: 0.8rem;
+}
+*:last-of-type {
+  padding: 0;}
+
+.wrapper {
+  color: #1e212c;
+  font-family: 'Lato';
+  margin: 0 auto;
+  width: 90vw;
+  min-height: 80vh;
+  border: 2px dashed red;
+}
+.lato-400-16-25_6,
+.lerning-stages,
+.learning-process {
+  max-width: 37.5rem;
+  font-weight: 400;
+  line-height: 25.6px;
+  font-size: 16px;
+  margin-bottom: 3rem;
+  color: #424551;
+}
+.list li {
+  margin: 0px 0px 10px 0px;
+  position: relative;
+  padding: 0 0 0 26px;
+}
+.list li::before {
+  content: '';
+  background: url('../img/check2-circle2.svg') 0 0 no-repeat;
+  background-size: cover;
+  filter: saturate(100%) hue-rotate(0deg);
+  /* filter: opacity(50%); */
+  width: 15.33px;
+  height: 14.67px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+.another-list::before {
+  top: 3px;
+}
+.cc-header {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 0.5rem;
+}
+.cc-name {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+}
+.course-curator {
+  margin-bottom: 1.125rem;
+}
+.curator-position {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  margin-bottom: 32px;
+}
+.info-box ul {
+  position: relative;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+}
+.info-box ul li:nth-child(1):before {
+  content: '';
+  background: url('../img/star.svg') 0 0 no-repeat;
+  background-size: cover;
+  filter: hue-rotate(0deg);
+  width: 15.33px;
+  height: 14.67px;
+  position: absolute;
+  top: 4px;
+  left: 0;
+}
+.info-box ul li:nth-child(2):before {
+  content: '';
+  background: url('../img/hollow-vector.svg') 0 0 no-repeat;
+  background-size: cover;
+  filter: hue-rotate(0deg);
+  width: 15.33px;
+  height: 14.67px;
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+.info-box ul li:nth-child(3):before {
+  content: '';
+  background: url('../img/student.svg') 0 0 no-repeat;
+  background-size: cover;
+  filter: hue-rotate(0deg);
+  width: 13.33px;
+  height: 14.33px;
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+.info-box {
+  margin-bottom: 32px;
+}
+.info-box ul li {
+  margin: 0px 0px 10px 0px;
+  position: relative;
+  padding: 0 0 0 26px;
+}
+.learning-process {
+  margin-bottom: 230px;
+}
+.cc-header {
+  text-transform: uppercase;
+}
+.hover:hover {
+  text-decoration: underline;
+}
+.active:active {
+  color: blue;
+}
+.visited a:visited {
+  color: magenta;
+}
+#focus a:focus {
+  color: purple;
+  font-family: Volja;
+  border: 3px dotted blue;
+  border-radius: 5px;
+}
+
+p:target {
+  background: #8080ff;
+}
+.flow-by {
+  margin-bottom: 0px;
+}
+a .deco-test:hover {
+  text-transform: uppercase;
+  text-decoration: overline;
+}
+.test-block,
+.test-block2 {
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+  background-image: url(../img/1618538389_49-p-fon-parket-52-min.jpg);
+  background-size: cover;
+}
+.test-block-ul li {
+  margin: 0px 0px 10px 0px;
+  position: relative;
+  padding: 2px 0 0 26px;
+}
+.test-block-ul li::before {
+  content: '';
+  background: url('../img/regby.svg') 0 0 no-repeat;
+  background-size: cover;
+  filter: opacity(100%);
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.test-block-ul li:nth-child(even) {
+  color: blue;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+.test-block-ul li:nth-child(odd) {
+  color: black;
+  font-size: 1rem;
+}
+.test-block:hover,
+.test-block2:hover {
+  background-image: url(../img/pinup55.png);
+  background-size: cover;
+}
+.test-block:active {
+  background-size: 20%;
+}
+body {
+  counter-reset: section;
+}
+
+.cc::before {
+  counter-increment: section;
+  content: 'Пункт №' counter(section) ': ';
+}
+.cc {
+  color: red;
+}
+.test-block h3 {
+  color: blue;
+  font-weight: 700;
+}
+.test-block2 {
+  background-image: url(../img/rodger-rabbit.jpg);
+  background-color: transparent;
+}
+.test-block2 h3 {
+  color: blue;
+  font-family: Roboto;
+  font-weight: 700;
+  margin-left: 2rem;
+}
+.test-block2:hover {
+  background-image: url(../img/pinap3.jpg);
+  background-color: transparent;
+}
+.test-block2 h1 {
+  color: blue;
+  font-family: Volja;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  font-weight: 900;
+  margin-left: 2rem;
+}
+.targeted {
+  border: 2px solid green;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+.inner-test-block {
+  font-family: Volja;
+  font-size: 0.8rem;
+  line-height: 1.3;
+  font-weight: 400;
+  display: inline-block;
+  max-width: 50%;
+  vertical-align: top;
+}
+.inner-test-block p:first-of-type {
+  color: magenta;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  text-decoration: underline;
+}
+header,
+footer {
+  height: 3rem;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  background-image: linear-gradient(to bottom, blue, yellow);
+}
+
